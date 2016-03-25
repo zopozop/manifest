@@ -4,13 +4,14 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
-  <remote name="zopzop"
+  <remote name="zopozop"
            fetch="https://github.com/zopozop/" />
   <remote  name="cm"
            fetch="https://github.com/cyanogenmod/" />
-           <default revision="refs/tags/android-6.0.1_r21"
+           <default revision="refs/tags/android-6.0.1_r3"
            remote="aosp"
            sync-j="4" />
+           
   <project path="build" name="android_build" groups="pdk,tradefed" remote="zopozop" revision="mm6.0.1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
